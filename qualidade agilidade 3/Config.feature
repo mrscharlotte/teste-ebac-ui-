@@ -18,7 +18,8 @@
             Dado que acesso o site de cadastro da ebac shop
             Quando insiro <nome>,<email> e <nascimento>
             Entao o sistema deve mandar a <mensagem>
-
+            
+            Exemplo:
             | nome    | email        | nascimento | mensagem                                  |
             | marcela | marcelin@123 | 25/04/2002 | "cadastro efetuado com sucesso"           |
             | joao    | -----        | 29/04/2002 | "erro por favor prencher todos os campos" |
