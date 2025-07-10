@@ -14,7 +14,7 @@
             Então o sistema deve validar o formato do e-mail e exibir uma mensagem de erro
 
 
-            Cenário: Cadastro com campos vazios
+            Esquema do Cenário: Cadastro com campos vazios
             Dado que acesso o site de cadastro da ebac shop
             Quando insiro <nome>,<email> e <nascimento>
             Entao o sistema deve mandar a <mensagem>

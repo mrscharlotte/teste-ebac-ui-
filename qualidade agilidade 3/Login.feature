@@ -17,15 +17,16 @@
             Quando insiro o e-mail "mari@loja.com" e a senha "maraizinha123"
             Então deve aparecer a mensagem de alerta "Usuário ou senha inválidos"
 
-            Cenário: Validação de múltiplos logins com diferentes modelos de autenticação
-            Dado que digito o <email> e a <senha>
-            Quando confirmo os dados de login
-            Então o sistema deve solicitar a verificação via <modelo de checkout>
-            | Usuário    | Senha        | Modelo de Checkout | Código |
-            | mariazinha | maria\@123   | SMS                | 202296 |
-            | joaozinha  | joao123      | E-mail             | 509944 |
-            | vitor      | vitor2025    | SMS                | 609944 |
-            | marcelin   | marcelin6522 | E-mail             | 009944 |
+            Esquema do Cenário: Validação de múltiplos logins com diferentes modelos de autenticação
+            Dado que estou no pagina de login
+            Quando digito <usuario>, <senha> e confirmo os dados
+            Então o sistema deve solicitar a verificação via <modelo de checkout> e <enviar o codigo>
+            exemplos:
+            | Usuário    | Senha        | Modelo de Checkout | Código | mensagem                     |
+            | mariazinha | maria\@123   | SMS                | 202296 | "login efetuado com sucesso" |
+            | joaozinha  | joao123      | E-mail             | 509944 | "login efetuado com sucesso" |
+            | vitor      | vitor2025    | SMS                | 609944 | "login efetuado com sucesso" |
+            | marcelin   | marcelin6522 | E-mail             | 009944 | "login efetuado com sucesso" |
 
 
 

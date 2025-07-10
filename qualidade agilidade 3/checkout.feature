@@ -19,11 +19,12 @@
             Quando clico no botão "Limpar"
             Então deve aparecer a mensagem: "Carrinho limpo com sucesso"
 
-            Cenário: Adicionar múltiplos produtos em uma mesma venda
+            Esquema do Cenario: Adicionar múltiplos produtos em uma mesma venda
             Dado que acesso a lista de produtos da Ebac-Shop
-            Quando escolho um produto com <tamanho> e <cor> e adiciono ao carrinho
+            Quando escolho um <produto> com <cor>, o <tamanho>,a <quantidade> e adiciono ao carrinho
             Então deve exibir a <mensagem>
-
+  
+            Exemplos: 
             | produto  | cor     | tamanho | quantidade carrinho | mensagem                            |
             | camiseta | verde   | G       | 1 produto           | "produto no carrinho atualmente"    |
             | calça    | laranja | m       | 2 produtos          | "2 produtos no carrinho atualmente" |
