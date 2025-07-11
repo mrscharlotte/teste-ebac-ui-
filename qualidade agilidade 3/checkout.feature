@@ -23,10 +23,10 @@
             Dado que acesso a lista de produtos da Ebac-Shop
             Quando escolho um <produto> com <cor>, o <tamanho>,a <quantidade> e adiciono ao carrinho
             Então deve exibir a <mensagem>
-  
-            Exemplos: 
-            | produto  | cor     | tamanho | quantidade carrinho | mensagem                            |
-            | camiseta | verde   | G       | 1 produto           | "produto no carrinho atualmente"    |
-            | calça    | laranja | m       | 2 produtos          | "2 produtos no carrinho atualmente" |
-            | shorts   | preta   | P       | 3 produtos          | "3 produtos no carrinho atualmente" |
-            | blusa    | preta   | g       | 4 produtos          | "4 produtos no carrinho atualmente" |
+
+            Exemplos:
+            | produto  | cor     | tamanho | quantidade | mensagem                            |
+            | camiseta | verde   | G       | 1 produto  | "produto no carrinho atualmente"    |
+            | calça    | laranja | m       | 2 produtos | "2 produtos no carrinho atualmente" |
+            | shorts   | preta   | P       | 3 produtos | "3 produtos no carrinho atualmente" |
+            | blusa    | preta   | g       | 4 produtos | "4 produtos no carrinho atualmente" |
